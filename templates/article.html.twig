@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h1>{{ article.title }}</h1>
+<div>
+    {{ article.body }}
+</div>
+<div>Creado: {{ article.createdAt|date('d/m/Y') }}</div>
+<div>{{ article.isPublished ? 'Sí' : 'No' }}</div>
+{% endblock %}

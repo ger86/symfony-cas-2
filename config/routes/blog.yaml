@@ -1,0 +1,26 @@
+blog_list:
+    path: /blog
+    controller: App\Controller\BlogController::list
+    methods: 'GET'
+
+blog_article:
+    path: /blog/{id}
+    controller: App\Controller\BlogController::article
+    requirements:
+        id: '\d+'
+
+blog_article_update:
+    path: /blog/{id}/update
+    controller: App\Controller\BlogController::update
+    requirements:
+        id: '\d+'
+
+blog_article_delete:
+    path: /blog/{id}/delete
+    controller: App\Controller\BlogController::delete
+    requirements:
+        id: '\d+'
+
+blog_article_create:
+    path: /blog/article/create
+    controller: App\Controller\BlogController::create

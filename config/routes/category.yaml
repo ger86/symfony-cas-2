@@ -1,0 +1,13 @@
+blog_category_list:
+    path: /blog/category
+    controller: App\Controller\CategoryController::list
+
+blog_category_create:
+    path: /blog/category/create
+    controller: App\Controller\CategoryController::create
+
+blog_category_show:
+    path: /blog/category/{id}
+    controller: App\Controller\CategoryController::show
+    requirements:
+        id: '\d+'

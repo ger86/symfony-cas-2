@@ -1,0 +1,8 @@
+[*]
+indent_style = space
+
+[*.{php,yml,yaml}]
+indent_size = 4
+
+[*.{twig}]
+indent_size = 2

@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="bg-danger mb-3">
+{{ quote }}
+</div>
+{% for article in articles %}
+    {{ include('article/article_teaser.html.twig') }}
+{% endfor %}
+{% endblock body %}

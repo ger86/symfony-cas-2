@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-body">
+        <h2 class="card-title">
+            <a href="{{ path('blog_article', {'id': article.id}) }}">
+                {{ article.title }}
+            </a>
+        </h2>
+        <div class="card-text">{{ article.body|withHeaderImage(500,500) }}</div>
+        <div class="card-footer">
+            Caracteres: {{ getCharsCount(article.body) }}
+        </div>
+    </div>
+</div>

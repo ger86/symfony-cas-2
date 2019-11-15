@@ -1,0 +1,2 @@
+paremeters:
+    app.mail.from: 'prod@mail.com'
